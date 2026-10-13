@@ -57,10 +57,53 @@ After every chart, add a Markdown cell with two or three sentences explaining:
 
 ### Part 5: Save your work
 
-- Save at least two charts as PNG files in the `charts` folder.
-- Save the cleaned DataFrame as `cleaned-data/student_interest_survey_cleaned.csv`.
-- Complete `AI-Use-Report.md`.
-- Run all notebook cells and make sure no errors remain.
+#### Save the notebook
+
+Visual Studio Code normally saves the notebook when you press **Ctrl+S**. Save regularly while you work. Before submitting, select **Run All** and confirm that every cell runs without an error.
+
+#### Save the cleaned data as a new CSV file
+
+Do not overwrite the original file in the `data` folder. Use `to_csv()` to save the cleaned DataFrame in the `cleaned-data` folder:
+
+```python
+# Save the cleaned DataFrame as a different CSV file.
+# index=False prevents pandas from adding an extra row-number column.
+cleaned_survey.to_csv(
+    "cleaned-data/student_interest_survey_cleaned.csv",
+    index=False
+)
+```
+
+#### Save a chart as an image
+
+Place `plt.savefig()` after the chart instructions but before `plt.show()`:
+
+```python
+# Save the current chart in the charts folder.
+plt.savefig("charts/my_chart.png", bbox_inches="tight")
+
+# Display the chart inside the notebook.
+plt.show()
+```
+
+Use a clear filename such as `major_bar_chart.png` or `interest_histogram.png`. Save at least two charts as PNG files.
+
+#### Check that the files were created
+
+Open the `cleaned-data` and `charts` folders in the Visual Studio Code Explorer. Confirm that the new CSV file and PNG files appear there. Do not submit empty folders.
+
+#### Save the repository to GitHub
+
+Saving with **Ctrl+S** saves files only on your computer. Use Git to send the saved files to GitHub:
+
+```bash
+git status
+git add .
+git commit -m "Complete Matplotlib assignment"
+git push
+```
+
+Complete `AI-Use-Report.md`, then open your GitHub repository and verify that your notebook, cleaned CSV, chart images, and AI report appear there.
 
 ## Required Repository Files
 
@@ -84,15 +127,6 @@ After every chart, add a Markdown cell with two or three sentences explaining:
 
 ## Submit Your Work
 
-Use these commands after completing the assignment:
-
-```bash
-git status
-git add .
-git commit -m "Complete Matplotlib assignment"
-git push
-```
-
-Open your repository on GitHub and confirm that your latest notebook, cleaned CSV, and chart images appear there. Submit the link to your public repository in Blackboard Ultra.
+Submit the link to your public GitHub repository in Blackboard Ultra.
 
 **Uploading work to GitHub alone does not count as submitting the assignment.**
