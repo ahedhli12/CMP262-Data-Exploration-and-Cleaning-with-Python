@@ -1,23 +1,41 @@
-# CMP 262: Data Exploration and Visualization with Python
+# CMP 262: Data Exploration, Cleaning, and Matplotlib
+
+## GitHub Starter Repository
+
+Use the following repository to access the Data Exploration, Cleaning, and Matplotlib starter files:
+
+[**CMP 262 Data Exploration and Cleaning with Python Starter Repository**](https://github.com/ahedhli12/CMP262-Data-Exploration-and-Cleaning-with-Python)
+
+### Getting Started
+
+1. Open the starter repository using the link above.
+2. Select **Use this template → Create a new repository**.
+3. Choose your personal GitHub account as the owner.
+4. Name your repository:
+
+   **LastName-FirstName-CMP262-Data-Exploration**
+
+5. Set your repository to **Public**.
+6. Select **Create repository**.
+7. Clone your newly created repository to your computer.
+8. Open the cloned repository in **Visual Studio Code**.
+9. Open **MatplotlibAssignment.ipynb**.
+10. Make sure the `data/student_interest_survey.csv` file is available.
+11. Complete all sections marked **TODO**.
+12. Run and test all notebook cells.
+13. Complete **AI-Use-Report.md**.
+14. Save the cleaned CSV in the `cleaned-data` folder.
+15. Save at least two chart images in the `charts` folder.
+16. Commit and push your completed work to GitHub.
+17. Include the link to your public GitHub repository in your Blackboard Ultra submission.
+
+**Important:** Clone your own newly created repository, not the instructor's starter repository.
 
 ## Objective
 
 Use pandas to explore and clean a small student-interest dataset, then use Matplotlib to create charts that communicate what you discover.
 
 This assignment introduces Matplotlib for the first time. You will practice one chart at a time and explain what each chart shows.
-
-## Getting Started
-
-1. Select **Use this template → Create a new repository**.
-2. Choose your personal GitHub account as the owner.
-3. Name your repository **LastName-FirstName-CMP262-Matplotlib**.
-4. Set the repository to **Public** and select **Create repository**.
-5. Clone your new repository to your computer.
-6. Open the cloned repository in Visual Studio Code.
-7. Open **MatplotlibAssignment.ipynb**.
-8. Select a Python kernel and run the notebook from top to bottom.
-
-**Important:** Work in your own repository, not the instructor's starter repository.
 
 ## What You Need to Do
 
@@ -125,8 +143,33 @@ Complete `AI-Use-Report.md`, then open your GitHub repository and verify that yo
 | Saved CSV, saved charts, and organized repository | 5 |
 | Completed AI Use Report | 5 |
 
-## Submit Your Work
+## GitHub Submission
 
-Submit the link to your public GitHub repository in Blackboard Ultra.
+Your GitHub repository should include your completed:
+
+- `MatplotlibAssignment.ipynb`
+- `AI-Use-Report.md`
+- `data/student_interest_survey.csv`
+- `cleaned-data/student_interest_survey_cleaned.csv`
+- At least two PNG chart files in the `charts` folder
+
+Make sure your latest work has been committed and pushed before submitting the assignment.
+
+Use these commands after completing or updating your work:
+
+```bash
+git status
+git add .
+git commit -m "Complete data exploration and Matplotlib assignment"
+git push
+```
+
+Open your repository on GitHub and confirm that the latest version of your notebook, cleaned CSV, and chart images appear there.
+
+## Blackboard Ultra Submission
+
+Blackboard Ultra is the official submission location.
+
+Submit the required assignment materials through Blackboard Ultra and include the link to your public GitHub repository.
 
 **Uploading work to GitHub alone does not count as submitting the assignment.**
